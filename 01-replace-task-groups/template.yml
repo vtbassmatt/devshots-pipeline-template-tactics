@@ -1,0 +1,9 @@
+steps:
+- script: |
+   echo First Step
+   echo $(Message)
+  displayName: 'First Step'
+- script: |
+   echo Second Step
+   echo $(Message)
+  displayName: 'Second Step'

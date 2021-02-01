@@ -1,0 +1,7 @@
+steps:
+- template: template.yml
+  parameters:
+    message: Hello World
+- template: template.yml
+  parameters:
+    message: Goodbye
