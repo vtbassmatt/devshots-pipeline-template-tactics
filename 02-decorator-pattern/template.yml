@@ -8,6 +8,6 @@ jobs:
 - job:
   steps:
   - task: MyTelemetryReporter@1
-  - ${{ each step in parameters.steps }}:
+  - ${{ each step in parameters.mySteps }}:
     - ${{ step }}
   - task: MyVirusScanner@1
