@@ -1,0 +1,7 @@
+# azure-pipelines.yml
+extends:
+  template: template.yml
+  parameters:
+    mySteps:
+    - script: echo foo
+    - script: echo bar
