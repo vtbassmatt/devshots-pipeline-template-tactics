@@ -1,0 +1,11 @@
+# template.yml
+# (parameters identical to previous examples)
+jobs:
+- job:
+  steps:
+  - ${{ each step in parameters.mySteps }}:
+    - ${{ each pair in step }}:
+        ${{ if eq(pair.key, 'task') }}:
+          ${{ if eq(pair.value, 'BadTask@1' )}}:
+            "Not allowed to use BadTask@1": ERROR
+        ${{ pair.key }}: ${{ pair.value }}
