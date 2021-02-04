@@ -7,8 +7,8 @@ steps:
 - script: |
    echo First Step
    echo '${{parameters.message}}'
-  displayName: 'First Step'
+  displayName: 'First Step From template.yml'
 - script: |
    echo Second Step
    echo '${{parameters.message}}'
-  displayName: 'Second Step'
+  displayName: 'Second Step From template.yml'
