@@ -2,9 +2,9 @@
 steps:
 - script: |
    echo First Step
-   echo $(message)
+   echo ${{parameters.message}}'
   displayName: 'First Step'
 - script: |
    echo Second Step
-   echo $(message)
+   echo ${{parameters.message}}'
   displayName: 'Second Step'
