@@ -2,7 +2,7 @@
 steps:
 - template: template.yml
   parameters:
-    message: Hello World
+    message: Pipeline Message 1
 - template: template.yml
   parameters:
-    message: Goodbye
+    message: Pipeline Message 2
