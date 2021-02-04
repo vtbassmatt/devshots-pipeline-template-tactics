@@ -1,10 +1,14 @@
 # template.yml
+parameters:
+- name: message
+  type: string
+
 steps:
 - script: |
    echo First Step
-   echo $(Message)
-  displayName: 'First Step'
+   echo '${{parameters.message}}'
+  displayName: 'First Step From template.yml'
 - script: |
    echo Second Step
-   echo $(Message)
-  displayName: 'Second Step'
+   echo '${{parameters.message}}'
+  displayName: 'Second Step From template.yml'
