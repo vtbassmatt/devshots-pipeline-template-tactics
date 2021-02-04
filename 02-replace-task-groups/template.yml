@@ -6,9 +6,9 @@ parameters:
 steps:
 - script: |
    echo First Step
-   echo ${{parameters.message}}'
+   echo '${{parameters.message}}'
   displayName: 'First Step'
 - script: |
    echo Second Step
-   echo ${{parameters.message}}'
+   echo '${{parameters.message}}'
   displayName: 'Second Step'
