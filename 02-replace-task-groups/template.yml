@@ -1,4 +1,8 @@
 # template.yml
+parameters:
+- name: message
+  type: string
+
 steps:
 - script: |
    echo First Step
